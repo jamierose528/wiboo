@@ -1,0 +1,41 @@
+* {
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+header {
+  background-color: #0026c5;
+}
+
+h1 {
+  text-align: center;
+  justify-content: center;
+  color: white;
+  padding-top: 30px;
+}
+
+li {
+  color: white;
+}
+
+input {
+  border-radius: 17px !important;
+  border: 1px solid black !important;
+  height: 2rem !important;
+  box-shadow: 10px 10px 5px black;
+}
+
+input::placeholder {
+  padding-left: 10px;
+}
+
+#searchbar {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  background-color: #fff;
+}
+
+#search-bar-input {
+  width: 300px;
+  height: 20px;
+}
