@@ -4,4 +4,19 @@
 
 #title {
   align-items: flex-start;
+  font-family: "Luckiest Guy", cursive;
+}
+
+#show-info {
+  width: 600px;
+  position: relative;
+  left: 900px;
+}
+
+#show-title {
+}
+
+#show-synopsis {
+  outline: gray 1px;
+  width: 600px;
 }
