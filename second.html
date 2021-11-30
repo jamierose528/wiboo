@@ -4,16 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/second.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Merriweather+Sans:wght@300&display=swap"
       rel="stylesheet"
     />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
     <link
       rel="stylesheet"
@@ -37,25 +41,41 @@
       </nav>
     </header>
     <main>
-      <img />
-      <section id="show-info">
-        <h2 id="show-title"></h2>
-        <p id="show-synopsis"></p>
-      </section>
+      <div class="container">
+        <section class="row" id="show-info">
+          <div class="col s3">
+            <img id="show-poster" src="" />
+          </div>
+          <div class="col s6">
+            <h2 id="show-title">Title</h2>
+            <p id="show-synopsis">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </section>
+      </div>
       <section id="show-genres">
         <h3 id="genres">Genres</h3>
         <ul id="genre-list"></ul>
       </section>
-      <div id="user-rating">
-        <h4>Rating</h4>
+      <div id="recommended-rating">
+        <h5>Rating</h5>
         <p id="rating"></p>
       </div>
+      <div id="user-score">
+        <h5>Score</h5>
+        <p id="score"></p>
+      </div>
       <section id="recommended">
-        <div id="first-recommendation">
-          <img href="" />
-        </div>
+        <div id="first-recommendation"></div>
       </section>
     </main>
-    <script src="assets/js/java.js"></script>
+    <script src="./assets/js/second.js"></script>
   </body>
 </html>

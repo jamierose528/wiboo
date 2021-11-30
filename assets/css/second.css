@@ -1,0 +1,24 @@
+.nav-wrapper {
+  display: flex;
+}
+
+#title {
+  align-items: flex-start;
+  font-family: "Luckiest Guy", cursive;
+}
+
+#show-info {
+  margin-top: 5%;
+}
+
+#show-poster {
+  margin-top: 15%;
+}
+
+/* #show-title {
+}
+
+#show-synopsis {
+  outline: gray 1px;
+  width: 600px;
+} */

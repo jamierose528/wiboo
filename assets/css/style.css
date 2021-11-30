@@ -12,6 +12,7 @@ h1 {
   justify-content: center;
   color: white;
   padding-top: 30px;
+  text-shadow: 5px 5px 5px black;
 }
 
 li {
