@@ -32,3 +32,5 @@ fetch("https://api.jikan.moe/v4/anime/" + id)
       genreList.append(listItem);
     }
   });
+
+  
