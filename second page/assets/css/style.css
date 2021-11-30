@@ -8,15 +8,17 @@
 }
 
 #show-info {
-  width: 600px;
-  position: relative;
-  left: 900px;
+  margin-top: 5%;
 }
 
-#show-title {
+#show-poster {
+  margin-top: 15%;
+}
+
+/* #show-title {
 }
 
 #show-synopsis {
   outline: gray 1px;
   width: 600px;
-}
+} */
