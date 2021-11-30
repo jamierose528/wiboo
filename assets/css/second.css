@@ -1,3 +1,7 @@
+body {
+  background-image: url(./images/mangapanels.jpeg);
+}
+
 .nav-wrapper {
   display: flex;
 }
@@ -7,18 +11,23 @@
   font-family: "Luckiest Guy", cursive;
 }
 
+#show-title {
+  background-color: white;
+}
+
 #show-info {
   margin-top: 5%;
+  background-color: white;
 }
 
 #show-poster {
   margin-top: 15%;
+  border: 2px black;
 }
 
-/* #show-title {
+#rating-and-score {
+  display: block;
+  display: flex;
+  width: 40%;
+  padding-left: 21rem;
 }
-
-#show-synopsis {
-  outline: gray 1px;
-  width: 600px;
-} */
