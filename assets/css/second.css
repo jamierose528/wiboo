@@ -40,3 +40,7 @@ main {
   width: 40%;
   padding-left: 16rem;
 }
+
+#user-score {
+  margin-left: 30px;
+}
