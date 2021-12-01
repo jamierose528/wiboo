@@ -16,6 +16,7 @@ body {
 h1 {
   font-family: "Luckiest Guy", cursive;
   text-align: center;
+  font-size: 100px !important;
   justify-content: center;
   color: white;
   padding-top: 30px;
