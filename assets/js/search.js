@@ -50,8 +50,9 @@ fetch("https://api.jikan.moe/v4/anime?score=9")
   .then(function (data) {
     var cards = document.querySelectorAll(".cards > img");
     var title = document.querySelectorAll("h6");
-    for (let i = 0; i < 4; i++) {
-      const animeObject = data.data[random];
+    var randomArray = fourRandomNumbers(data.data);
+    for (let i = 0; i < randomArray.length; i++) {
+      const animeObject = data.data[randomArray[i]];
 
       cards[i].setAttribute("src", animeObject.images.jpg.image_url);
 
