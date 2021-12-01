@@ -37,6 +37,28 @@ input::placeholder {
   padding-left: 10px;
 }
 
+.cards {
+  margin: 50px;
+}
+
+.poster {
+  height: 35vh;
+  box-shadow: 5px 5px 15px black;
+}
+
+.poster:hover {
+  box-shadow: 5px 5px 5px black;
+}
+
+#card-container {
+  background-color: white;
+  padding-top: 20px;
+  padding-left: 25rem;
+  position: flex;
+  align-items: center;
+  box-shadow: 5px 5px 15px black;
+}
+
 #searchbar {
   display: flex;
   justify-content: center;

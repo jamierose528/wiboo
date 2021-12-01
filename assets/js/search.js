@@ -44,6 +44,29 @@ fetch("https://api.jikan.moe/v4/anime?score=9")
     }
   });
 
+document.addEventListener("DOMContentLoaded", function () {
+  const inputField = document.querySelector(".autocomplete");
+
+  fetch("https://api.jikan.moe/v4/anime?limit=100")
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (results) {
+      console.log(results);
+      var options = {};
+      for (let i = 0; i < results.data.length; i++) {
+        console.log(results.data[i].title);
+        options[results.data[i].title] = "";
+      }
+      console.log(options);
+      M.Autocomplete.init(inputField, {
+        data: options,
+        limit: "infinit",
+        minLength: 1,
+      });
+    });
+});
+
 searchButton.addEventListener("click", function (event) {
   displayResults();
 });
