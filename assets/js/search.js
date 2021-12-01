@@ -40,32 +40,18 @@ fetch("https://api.jikan.moe/v4/anime?score=9")
       const animeObject = data.data[random];
 
       cards[i].setAttribute("src", animeObject.images.jpg.image_url);
+
+      cards[i].addEventListener("click", function (event) {
+        console.log(animeObject.mal_id);
+        localStorage.setItem("id", animeObject.mal_id);
+        location.replace("second.html");
+      });
+
+      //   add change to 2nd html link when click on image
       title[i].textContent = animeObject.title;
     }
   });
 
-document.addEventListener("DOMContentLoaded", function () {
-  const inputField = document.querySelector(".autocomplete");
-
-  fetch("https://api.jikan.moe/v4/anime?limit=100")
-    .then(function (response) {
-      return response.json();
-    })
-    .then(function (results) {
-      console.log(results);
-      var options = {};
-      for (let i = 0; i < results.data.length; i++) {
-        console.log(results.data[i].title);
-        options[results.data[i].title] = "";
-      }
-      console.log(options);
-      M.Autocomplete.init(inputField, {
-        data: options,
-        limit: "infinit",
-        minLength: 1,
-      });
-    });
-});
 
 searchButton.addEventListener("click", function (event) {
   displayResults();
