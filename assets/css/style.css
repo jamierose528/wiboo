@@ -50,6 +50,7 @@ input::placeholder {
 
 .poster:hover {
   box-shadow: 5px 5px 5px black;
+  transition: all 0.3s ease-in-out;
 }
 
 #card-container {
@@ -76,6 +77,7 @@ input::placeholder {
 
 #search-bar-input:hover {
   box-shadow: 5px 5px 15px black;
+  transition: all 0.3s ease-in-out;
 }
 
 #search-button {
@@ -85,4 +87,5 @@ input::placeholder {
 
 #search-button:hover {
   box-shadow: 5px 5px 15px black;
+  transition: all 0.3s ease-in-out;
 }
