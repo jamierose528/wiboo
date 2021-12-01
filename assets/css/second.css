@@ -15,7 +15,7 @@ main {
 #title {
   align-items: flex-start;
   font-family: "Luckiest Guy", cursive;
-  text-shadow: 5px 5px 15px black;
+  text-shadow: 3px 3px 5px black;
 }
 
 #show-title {
