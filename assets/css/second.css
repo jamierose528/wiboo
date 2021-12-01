@@ -2,6 +2,11 @@ body {
   background-image: url(./images/mangapanels.jpeg);
 }
 
+main {
+  background-color: white;
+  margin: 148px;
+}
+
 .nav-wrapper {
   display: flex;
 }
@@ -17,7 +22,8 @@ body {
 
 #show-info {
   margin-top: 5%;
-  background-color: white;
+  /* background-color: white;
+  padding: 0px 0px 20px 20px; */
 }
 
 #show-poster {
@@ -29,5 +35,5 @@ body {
   display: block;
   display: flex;
   width: 40%;
-  padding-left: 21rem;
+  padding-left: 16rem;
 }
