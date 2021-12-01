@@ -18,6 +18,22 @@ function displayResults() {
     });
 }
 
+// background image changes every refresh
+function changeImg() {
+  var myImages = [
+    "./assets/css/images/mangapanels.jpeg",
+    "./assets/css/images/mangapanel2.jpeg",
+    "./assets/css/images/mangapanel3.jpeg",
+    "./assets/css/images/mangapanel4.png",
+    "./assets/css/images/mangapanel5.jpeg",
+  ];
+  var imgShown = document.body.style.backgroundImage;
+  var newImgNumber = Math.floor(Math.random() * myImages.length);
+  document.body.style.backgroundImage = "url(" + myImages[newImgNumber] + ")";
+}
+
+changeImg();
+
 // enter key for search bar
 function logKey(e) {
   console.log(e.code);
