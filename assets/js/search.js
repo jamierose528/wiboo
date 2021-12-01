@@ -26,6 +26,21 @@ function logKey(e) {
   }
 }
 
+function fourRandomNumbers(animeArray) {
+  var randomNumArray = [];
+
+  for (let i = 0; i < 4; i++) {
+    var randomNum = Math.floor(Math.random() * animeArray.length);
+    if (randomNumArray.indexOf(randomNum) === -1) {
+      randomNumArray.push(randomNum);
+    } else {
+      i--;
+    }
+  }
+  return randomNumArray;
+}
+
+// four top anime cards on front page
 fetch("https://api.jikan.moe/v4/anime?score=9")
   .then(function (response) {
     if (response.ok) {
@@ -36,22 +51,20 @@ fetch("https://api.jikan.moe/v4/anime?score=9")
     var cards = document.querySelectorAll(".cards > img");
     var title = document.querySelectorAll("h6");
     for (let i = 0; i < 4; i++) {
-      var random = Math.floor(Math.random() * data.data.length);
       const animeObject = data.data[random];
 
       cards[i].setAttribute("src", animeObject.images.jpg.image_url);
 
+      //   add change to 2nd html link when click on image
       cards[i].addEventListener("click", function (event) {
         console.log(animeObject.mal_id);
         localStorage.setItem("id", animeObject.mal_id);
         location.replace("second.html");
       });
 
-      //   add change to 2nd html link when click on image
       title[i].textContent = animeObject.title;
     }
   });
-
 
 searchButton.addEventListener("click", function (event) {
   displayResults();
