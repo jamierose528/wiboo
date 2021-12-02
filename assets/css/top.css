@@ -45,7 +45,7 @@ h2{
 }
 
 .show-card {
-    background-color: #345dff;
+    background-color: white;
     padding-top: 20px;
     padding-bottom: 20px;
     position: flex;
@@ -56,7 +56,7 @@ h2{
     margin: 50px;
     display: grid;
     text-align: center;
-    color: white;
+    color: black;
     flex-shrink: 50%;
   
     
