@@ -23,14 +23,16 @@ Then four new anime choices will render with their box cover art for the user to
 
 ### API's
 
-https://docs.api.jikan.moe/
-https://api.simkl.com/anime/best/
+- https://docs.api.jikan.moe/
+- https://api.simkl.com/anime/best/
 
 ## Screenshots
 
 ![Main page screenshot](assets/css/images/Screenshots/MainScreenShot.png)
 ![Focused title page screenshot](assets/css/images/Screenshots/2ndScreenShot.png)
 ![Popular Anime Page](assets/css/images/Screenshots/PopularAnime.png)
+![Genres](assets/css/images/Screenshots/Genres.png)
+![All Animes](assets/css/images/Screenshots/AllAnimes.png)
 
 ## Repository
 
