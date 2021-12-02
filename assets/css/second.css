@@ -32,13 +32,20 @@ main {
   margin-top: 15%;
   border: 2px black;
   box-shadow: 5px 5px 15px black;
+  width: 100%;
+}
+
+#genres {
+  text-align: center;
+}
+
+#genre-list {
+  text-align: center;
 }
 
 #rating-and-score {
-  display: block;
   display: flex;
-  width: 40%;
-  padding-left: 16rem;
+  justify-content: center;
 }
 
 #user-score {
