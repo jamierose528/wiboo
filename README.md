@@ -20,6 +20,7 @@ Then four new anime choices will render with their box cover art for the user to
 - Eric Zhong
 - Carl Rowans III
 - John Tannous
+- Bryan & Mike = MVPs
 
 ### API's
 
