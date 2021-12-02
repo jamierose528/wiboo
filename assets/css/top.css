@@ -34,6 +34,15 @@ h2{
     
 }
 
+.nav-wrapper {
+  display: flex;
+}
+
+#title {
+  align-items: flex-start;
+  font-family: "Luckiest Guy", cursive;
+  text-shadow: 3px 3px 5px black;
+}
 
 .show-card {
     background-color: #345dff;

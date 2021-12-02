@@ -18,20 +18,6 @@ fetch(url)
     }
   })
   .then(function (data) {
-    /* 
-    ids:
-simkl_id: 41586
-slug: "hagane-no-renkinjutsushi"
-[[Prototype]]: Object
-poster: "74/745248467ef7faab"
-ratings:
-mal: {rating: 9.1, votes: 1639865}
-simkl: {rating: 9, votes: 2228}
-[[Prototype]]: Object
-title: "Hagane no Renkinjutsushi"
-url: "/anime/41586/hagane-no-renkinjutsushi"
-year: 2009
- */
     const cardContainer = document.querySelector(".card-container");
     console.log(data);
     data.forEach((show) => {
