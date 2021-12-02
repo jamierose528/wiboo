@@ -55,3 +55,17 @@ function changeImg() {
 
 changeImg();
 
+function displayResultsGenre(choice) {
+  fetch("https://api.jikan.moe/v4/anime?genre=" + choice)
+    .then(function (response) {
+      return response.json();
+    })
+
+    // grabs the mal_id of each title to set into local storage
+    .then(function (results) {
+      console.log(results.data[0].mal_id);
+      localStorage.setItem("id", results.data[0].mal_id);
+      location.replace("second.html");
+    });
+}
+
