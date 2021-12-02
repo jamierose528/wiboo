@@ -40,3 +40,18 @@ fetch("https://api.jikan.moe/v4/anime/" + id)
     // Need to complete after slightly adjusting search.js
   }
   
+function changeImg() {
+  var myImages = [
+    "./assets/css/images/mangapanels.jpeg",
+    "./assets/css/images/mangapanel2.jpeg",
+    "./assets/css/images/mangapanel3.jpeg",
+    "./assets/css/images/mangapanel4.png",
+    "./assets/css/images/mangapanel5.jpeg",
+  ];
+  var imgShown = document.body.style.backgroundImage;
+  var newImgNumber = Math.floor(Math.random() * myImages.length);
+  document.body.style.backgroundImage = "url(" + myImages[newImgNumber] + ")";
+}
+
+changeImg();
+
