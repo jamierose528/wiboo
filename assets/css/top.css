@@ -38,7 +38,7 @@ h2{
   display: flex;
 }
 
-#title {
+#title a {
   align-items: flex-start;
   font-family: "Luckiest Guy", cursive;
   text-shadow: 3px 3px 5px black;
