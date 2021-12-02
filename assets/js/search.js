@@ -18,6 +18,22 @@ function displayResults() {
     });
 }
 
+// background image changes every refresh
+function changeImg() {
+  var myImages = [
+    "./assets/css/images/mangapanels.jpeg",
+    "./assets/css/images/mangapanel2.jpeg",
+    "./assets/css/images/mangapanel3.jpeg",
+    "./assets/css/images/mangapanel4.png",
+    "./assets/css/images/mangapanel5.jpeg",
+  ];
+  var imgShown = document.body.style.backgroundImage;
+  var newImgNumber = Math.floor(Math.random() * myImages.length);
+  document.body.style.backgroundImage = "url(" + myImages[newImgNumber] + ")";
+}
+
+changeImg();
+
 // enter key for search bar
 function logKey(e) {
   console.log(e.code);
@@ -50,8 +66,9 @@ fetch("https://api.jikan.moe/v4/anime?score=9")
   .then(function (data) {
     var cards = document.querySelectorAll(".cards > img");
     var title = document.querySelectorAll("h6");
-    for (let i = 0; i < 4; i++) {
-      const animeObject = data.data[random];
+    var randomArray = fourRandomNumbers(data.data);
+    for (let i = 0; i < randomArray.length; i++) {
+      const animeObject = data.data[randomArray[i]];
 
       cards[i].setAttribute("src", animeObject.images.jpg.image_url);
 
