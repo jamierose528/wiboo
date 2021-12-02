@@ -4,6 +4,7 @@ var showImage = document.querySelector("img");
 var genreList = document.querySelector("#genre-list");
 var rating = document.querySelector("#rating");
 var score = document.querySelector("#score");
+var currPage = document.querySelector("#page-number");
 
 // moves anime ID into local storage to pull on second html
 var id = localStorage.getItem("id");
@@ -33,6 +34,12 @@ fetch("https://api.jikan.moe/v4/anime/" + id)
     }
   });
 
+  function changePage() {
+    var nextPage = currPage + 1;
+    var prevPage = currPage - 1;
+    // Need to complete after slightly adjusting search.js
+  }
+  
 function changeImg() {
   var myImages = [
     "./assets/css/images/mangapanels.jpeg",
@@ -47,3 +54,4 @@ function changeImg() {
 }
 
 changeImg();
+
