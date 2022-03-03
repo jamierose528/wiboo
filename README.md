@@ -2,7 +2,8 @@
 
 ## User-Story:
 
-As a user of Wiboo.com I want to be able to search anime titles and different categories of anime so that I will be able to figure out what to watch next. The end-user will click on the search bar and search anime by name or category. The three tabs: Home , Genre & Anime List will direct the end-user to either the homepage , a category list or complete anime library in Wiboo. The end-user can also click on the four revolving anime box cover art that is located under the search bar for quick access to anime selections .
+
+The user will be able to search anime titles and different categories of anime. The user will click on the search bar and search by name. The navbar holds three tabs: Home, Genre, & Anime List, which will direct the user to either the homepage, a category list, or complete anime library in Wiboo. The end-user can also click on the four revolving top animes' box cover art that is located under the search bar for quick access to anime selections.
 
 ## Acceptance Criteria:
 
