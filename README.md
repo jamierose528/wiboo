@@ -17,10 +17,10 @@ Then four new anime choices will render with their box cover art for the user to
 
 ## Credits:
 
-- Jamie Rose Chu
-- Eric Zhong
-- Carl Rowans III
-- John Tannous
+- Jamie Rose Chu: Concept, Project Manager, General API connection, Web Design, ReadMe, and UI/UX Design.
+- Eric Zhong: Populating overall genre and anime list.
+- Carl Rowans III: ReadMe and Pitch Presentation.
+- John Tannous: Assignment required second API.
 - Bryan & Mike = MVPs
 
 ### API's
